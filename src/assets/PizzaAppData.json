@@ -1,0 +1,31 @@
+{
+  "pizzaList": [
+    {
+      "name": "Batman Pizza",
+      "base": "Thin Crust",
+      "cheese": "No cheese",
+      "type":"veg",
+      "price": "200",
+      "image": "d:img/bla"
+    },
+    {
+      "name": "Superman Pizza",
+      "base": "Regular base",
+      "cheese": "Cheese topping",
+      "type":"nonveg",
+      "price": "300",
+      "image": "d:img/bla"
+    }
+  ],
+  "base": [
+    "Thin Crust",
+    "Regular base",
+    "Flat bread",
+    "Multigrain"
+  ],
+  "cheese": [
+    "Cheese burst",
+    "Cheese topping",
+    "No cheese"
+  ]
+}

@@ -1,0 +1,16 @@
+<div class="menu-div">
+  <span id="logo-div" class="col-xs-2">
+    <div class="logo"><span>&nbsp;</span></div>
+    <span id="site-name"> My Pizza</span>
+  </span>
+  <span class="col-xs-10 menu-bar">
+    <span class="col-xs-1">File</span>
+    <span class="col-xs-1">Edit</span>
+    <span class="col-xs-1">View</span>
+    <span class="col-xs-1">Help</span>
+  </span>
+</div>
+<div id="content">
+   <span class="col-xs-4"><app-side-filter [fullDataSet]="fullDataSet"></app-side-filter></span> 
+   <span class="col-xs-8"><app-pizza-list  [fullDataSet]="fullDataSet"></app-pizza-list></span> 
+</div>

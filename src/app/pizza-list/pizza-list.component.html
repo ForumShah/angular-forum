@@ -1,0 +1,22 @@
+<div id="pizza-list-bar">
+  <div class="pizza-list-content">
+    <div class="pizza-list" *ngFor="let entity of fullDataSet.pizzaList">
+      <span class="pizza-img col-xs-4">img</span>
+      <span class="pizza-menu col-xs-8">
+        <h3>{{entity.name}}</h3>
+        <ul>
+          <li>{{entity.base}}</li>
+          <li>{{entity.cheese}}</li>
+          <li>{{entity.type}}</li>
+        </ul>
+        Rs.{{entity.price}}
+        <span>
+          <button>Add</button>
+        </span>
+      </span>
+      <span class="hr-class col-xs-12"></span>
+    </div>
+    <div *ngIf="noPizza">
+      {{emptyMessage}}
+    </div>
+  </div>

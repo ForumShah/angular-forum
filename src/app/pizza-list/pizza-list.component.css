@@ -1,0 +1,19 @@
+#pizza-list-bar{
+    padding:10px;
+}
+.pizza-list-bar-content{
+    border: 2px solid black;
+}
+.pizza-img{
+height: 100%;
+border: 1px solid black;
+}
+.hr-class{
+    border-bottom: 1px solid black;
+    height: 10%;
+    margin-bottom: 20px;
+}
+.pizza-list{
+    height:150px;
+    margin-bottom: 20px;
+}

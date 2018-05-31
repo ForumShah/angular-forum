@@ -1,0 +1,37 @@
+<div id="side-bar">
+  <div class="side-bar-content">
+    <div class="btn-group btn-toggle toggle-class">
+      <button class="btn btn-sm btn-default" (click)="toggle('nonveg')" [class.btn-primary]="clicked === 'nonveg'">NON VEG</button>
+      <button class="btn btn-sm btn-default" (click)="toggle('veg')" [class.btn-primary]="clicked === 'veg'">VEG</button>
+    </div>
+    <div class="price-range">
+      <label for="price">Pizza Range:</label>
+      <span> 100 - {{_currentRange}}
+        <input type="range" id="price" min="100" max="600" value="600" step="100" title="{{_currentRange}}" class="slider" id="myRange"
+          (change)="onRangeChange($event.target.value)">
+      </span>
+    </div>
+    <div class="dropdown pizza-base-dropdown">
+      <div class="form-group">
+        <label for="base">Pizza Base:</label>
+        <select class="form-control" id="base" (change)="changeBase($event.target.value)">
+          <option *ngFor="let base of fullDataSet.base">
+            <a href="#">{{base}}</a>
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="dropdown pizza-type-dropdown">
+      <div class="form-group">
+        <label for="cheese">Pizza cheese:</label>
+        <select class="form-control" id="cheese" (change)="changeCheeseFilter($event.target.value)">
+          <option *ngFor="let cheese of fullDataSet.cheese">
+            <a href="#">{{cheese}}</a>
+          </option>
+        </select>
+      </div>
+    </div>
+    <button (click)="clearFilter()">Clear Filter</button>
+  </div>
+
+</div>

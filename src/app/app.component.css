@@ -1,0 +1,24 @@
+.menu-div{
+    padding: 30px 10px 50px 10px;
+}
+.menu-bar{
+    float: right;
+    border: 2px solid black;
+    padding: 6px;
+}
+#logo-div{
+    padding:6px;
+    padding-left: 15px;
+}
+.logo{
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 35px;
+    display: inline-block;
+}
+#site-name{
+    font-weight: bold;
+}
+#content{
+    margin-top: 5px;
+}
